@@ -1,0 +1,50 @@
+
+<h2>Choose the best according to your requirements:</h2>
+<div>
+
+  <form  class="form" #f="ngForm" novalidate (ngSubmit)="filterByCity()">
+
+    <select class="form-control" name="city" id="city"
+    [(ngModel)]="usercity" #city=ngModel >
+      <option value=" " selected="selected">--City--</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Kolkata">Kolkata</option>
+    </select>
+    
+    <button class="btn btn-block btn-primary">Filter</button>
+
+    
+   
+
+  </form>
+
+</div>
+
+<h2>Exciting Plans</h2>
+<div class="row" *ngIf="plans && plans.length>0">
+  <div class="col-lg-2 ml-1 mb-1" *ngFor="let p of plans">
+    <div class="card" (mouseover)="cf.hidden=false" (mouseleave)="cf.hidden=true">
+      <img class="card-img-top" [src]="" />
+      <div class="card-body">
+        <h6 class="card-title">Plan {{p.planId}}:{{p.planName}}</h6>
+        <p class="card-text">
+          Max Usage:{{p.maxUsage}}Gb
+          <br />Speed:{{p.speed}}Mbps
+          <br />Price:{{p.price}}/-
+
+        </p>
+      </div>
+      <div class="card-footer" hidden="true" #cf>
+        <div class="btn-group">
+
+          <a routerLink="/viewPlan/{{p.planId}}" class="btn ">
+            View Plan Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

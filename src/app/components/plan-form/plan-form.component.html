@@ -1,0 +1,55 @@
+<h3>Add Plans:</h3>
+<form class="form" #f="ngForm" novalidate (ngSubmit)="save()">
+
+    <div>
+    <input type="text" class="form-control" id="pid" name="pid"
+    [(ngModel)]="plan.planId" #pid=ngModel placeholder="Plan Id" /> 
+    </div>
+
+
+    <div>
+    <input type="text" class="form-control" id="pnm" name="pnm"
+    [(ngModel)]="plan.planName" #pnm=ngModel placeholder="Plan Name" /> 
+    </div>
+    
+
+    <div>
+    <input type="text" class="form-control" id="pmu" name="pmu"
+    [(ngModel)]="plan.maxUsage" #pmu=ngModel placeholder="Max Usage in GB" /> 
+    </div>
+
+<div>
+    <input type="text" class="form-control" id="spd" name="spd"
+    [(ngModel)]="plan.speed" #spd=ngModel placeholder="Plan Speed in Mbps" /> 
+  </div>
+
+    <div>
+    <input type="text" class="form-control" id="prc" name="prc"
+    [(ngModel)]="plan.price" #prc=ngModel placeholder="Plan Price" /> 
+  </div>
+
+  <div>
+    <input type="text" class="form-control" id="val" name="val"
+    [(ngModel)]="plan.validity" #val=ngModel placeholder="Plan Validity" /> 
+  </div>
+
+<div>
+    <input type="text" class="form-control" id="fup" name="fup"
+    [(ngModel)]="plan.postSpeed" #fup=ngModel placeholder="Post FUP Speed in Mbps" /> 
+  </div>
+  <div>
+    <input type="text" class="form-control" id="cty" name="cty"
+    [(ngModel)]="plan.city" #cty=ngModel placeholder="City" /> 
+  </div>
+  <div>
+    <input type="text" class="form-control" id="uty" name="uty"
+    [(ngModel)]="plan.usageType" #uty=ngModel placeholder="Plan Usage Type" /> 
+  </div>
+
+  <div>
+      <button class="btn btn-block btn-primary">Save</button>
+    </div>
+
+
+</form>
+<h5> This is admin page only admin type users will be allowed to add the plan</h5>

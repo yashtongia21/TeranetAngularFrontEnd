@@ -1,0 +1,58 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-sm-9 m-auto">
+      <h3 class="mb-5 mt-5">
+        <fa name="user-plus"></fa> Login Form
+      </h3>
+
+      <form class="form" #f="ngForm" novalidate (ngSubmit)="f.valid && save()" >
+
+        <div class="mb-3">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <fa name="envelope"></fa>
+              </span>
+            </div>
+            <input type="email" class="form-control" id="email" name="email" required [(ngModel)]="login.emailId"
+              #email=ngModel placeholder="Enter your email id" />
+          </div>
+          <div class="alert alert-danger" *ngIf="email.errors && (email.touched || email.dirty)">
+            <p>Please see that Email Id <strong>
+                <span *ngIf="email.errors.required">is not left blank</span>
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <fa name="anchor"></fa>
+              </span>
+            </div>
+            <input type="password" class="form-control" id="password" name="password" required [(ngModel)]="login.password"
+              #password=ngModel placeholder="Enter your Password" />
+          </div>
+          <div class="alert alert-danger" *ngIf="password.errors && (password.touched || password.dirty)">
+            <p>Please see that password <strong>
+                <span *ngIf="password.errors.required">is not left blank</span>
+              </strong>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <button class="btn btn-block btn-outline-success" >Save</button>
+        </div>
+      </form>
+<br/>
+      <div>
+        <button class="btn btn-outline-info" routerLink="/signup">New User ? Register here</button>
+        <button class="btn btn-outline-primary" routerLink="/forgotPass" style="text-align: right; float:right;">Forgot your password ? Click here</button>
+      </div>
+
+    </div>
+  </div>
+</div>

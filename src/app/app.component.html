@@ -1,0 +1,248 @@
+
+<!-- As a link -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="src\assets\icons8-radio-tower-48.png" width="30" height="30" class="d-inline-block align-top" alt="">
+   TERANET 
+  </a>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <!--
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plans
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Plans For Home</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Plans For Business</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Plans For Office</a>
+          
+        </div>
+      
+      </li>
+      -->
+      <li class="nav-item active">
+        <a class="nav-link" href="listPlans">Plans<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Contact Us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="feedback-form">Feedback <span class="sr-only">(current)</span></a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0" #f="ngForm" novalidate (ngSubmit)="login()">
+      
+      <button class="btn btn-sm btn-outline-secondary">Login/Sign Up</button>
+      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+  </div>
+</nav>
+
+
+
+<router-outlet></router-outlet>
+
+<hr>
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-light pt-4 bg-light">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Goal</h5>
+        <p>The right combination of fast and reliable speeds, competitive pricing, 
+          and positive customer service earned us the number-one spot for the world class internet service provider.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Services</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Fios</a>
+          </li>
+          <li>
+            <a href="#!">5G</a>
+          </li>
+          <li>
+            <a href="#!">Broadband</a>
+          </li>
+          <li>
+            <a href="#!">Li-Fi</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Products</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Kiwi 2</a>
+          </li>
+          <li>
+            <a href="#!">Amandanas</a>
+          </li>
+          <li>
+            <a href="#!">Lisa</a>
+          </li>
+          <li>
+            <a href="#!">Zj-8</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Partners</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Hathaway</a>
+          </li>
+          <li>
+            <a href="#!">Cisco</a>
+          </li>
+          <li>
+            <a href="#!">Aruba Networks</a>
+          </li>
+          <li>
+            <a href="#!">Simbav</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Need a connection?</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+ 
+
+
+<!-- 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fab fa-facebook-f"></i></a> 
+  <a href="#"><i class="fab fa-twitter"></i></a> 
+  <a href="#"><i class="fab fa-google"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a> 
+</div>
+
+-->
+
+
+  <hr>
+
+<!--
+  <nav class="navbar navbar-ct-blue navbar-fixed-top navbar-transparent" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbar-brand-logo" href="">
+              <div class="logo">
+                  <img src="assets\icons8-radio-tower-48.png">
+              </div>
+              <div class="brand">Teranet </div>
+            </a>
+      </div>
+     
+    
+  </nav>
+
+-->
+
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <a class="navbar-brand" href="#">
+   <img src="assets\images.png" alt="Connect With Us" style="width:50px ;">
+ </a>
+ Lets Get Connected!   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+ 
+ <a href="https://www.facebook.com/"><img src="assets\icons8-facebook-24.png" alt="Logo" style="width:20px;"> &nbsp; &nbsp; &nbsp; &nbsp; </a>
+ <a href="https://www.google.com/"><img src="assets\icons8-google-48.png" alt="Logo" style="width:20px;"> &nbsp; &nbsp; &nbsp; &nbsp; </a>
+ <a href="https://www.instagram.com"><img src="assets\icons8-instagram-48.png" alt="Logo" style="width:20px;"> &nbsp; &nbsp; &nbsp; &nbsp; </a>
+ <a href="https://twitter.com"><img src="assets\icons8-twitter-48.png" alt="Logo" style="width:20px;"> &nbsp; &nbsp; &nbsp; &nbsp; </a>
+ <a href="https://www.snapchat.com"><img src="assets\icons8-snapchat-48.png" alt="Logo" style="width:20px;"> &nbsp; &nbsp; &nbsp; &nbsp; </a>
+
+
+</nav>
+
+
+
+  <hr>
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="">TeraNet.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+

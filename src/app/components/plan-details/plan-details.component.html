@@ -1,0 +1,61 @@
+<div class="container mt-2">
+    <div class="row">
+      <div class="col-sm-9 m-auto" *ngIf="!plan">
+        <h3>
+           Loading
+        </h3>
+      </div>
+      <div class="col-sm-9 m-auto" *ngIf="plan">
+        <h3 class="mb-5 mt-5">
+          
+          Plan {{plan.planId}} Details
+        </h3>
+        <div class="card">
+          <div class="card-header">
+            <h5 class="float-left">{{plan.planName}}</h5>  
+          </div>
+          <div class="card-body">
+            <div class="row">
+              
+              <div class="col-md-9">
+  
+                <p>
+                  <b>Maximum Usage </b>:{{plan.maxUsage}} GB
+                </p>
+                <p>
+                    <b>Speed </b>:{{plan.speed}} Mbps
+                </p>
+                <p>
+                    <b class="price">Rs.{{plan.price}}/-</b>
+                </p>
+
+                <p>
+                    <b>Valid for </b>:{{plan.validity}} days
+                </p>
+
+                <p>
+                    <b>Post Fup Speed</b> :{{plan.postSpeed}} Mbps
+                </p>
+
+                <p>
+                    <b>Available in</b>:{{plan.city}}
+                </p>
+
+                <p>
+                    <b>Suitable for </b>:{{plan.usageType}}
+                </p>
+                <form>
+                <div>
+                  <button class="btn btn-block btn-primary">Select</button>
+                </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+  
+      </div>
+    </div>
+  </div>
